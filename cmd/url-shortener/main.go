@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+	"github/SergeyMoshkov/url-shortener/internal/config"
+)
+
 func main() {
-	// TODO: init config
+	cfg := config.MustLoad()
+	fmt.Println(cfg)
 }
